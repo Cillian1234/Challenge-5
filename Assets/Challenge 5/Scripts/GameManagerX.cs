@@ -85,13 +85,15 @@ public class GameManagerX : MonoBehaviour
 
     void Update()
     {
-        time -= Time.deltaTime;
-        timer.text = "Time: " + Mathf.Round(time);
-
-        if (time <= 0)
+        if (isGameActive)
         {
-            GameOver();
-            timer.text = "Time: :(";
+            time -= Time.deltaTime;
+            timer.text = "Time: " + Mathf.Round(time);
+
+            if (time <= 0)
+            {
+                GameOver();
+            }
         }
     }
 
