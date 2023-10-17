@@ -6,9 +6,9 @@ public class TargetX : MonoBehaviour
 {
     private Rigidbody rb;
     private GameManagerX gameManagerX;
-    public int pointValue;
     public GameObject explosionFx;
 
+    public int pointValue;
     public float timeOnScreen = 1.0f;
 
     private float minValueX = -3.75f; // the x value of the center of the left-most square

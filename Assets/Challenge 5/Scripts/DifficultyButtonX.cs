@@ -14,11 +14,11 @@ public class DifficultyButtonX : MonoBehaviour
     {
         gameManagerX = GameObject.Find("Game Manager").GetComponent<GameManagerX>();
         button = GetComponent<Button>();
-        button.onClick.AddListener(SetDifficulty);
+        button.onClick.AddListener(SetDifficulty); // get difficulty from button clicked
     }
 
     /* When a button is clicked, call the StartGame() method
-     * and pass it the difficulty value (1, 2, 3) from the button 
+     * and pass it the difficulty value (1, 2, 3) from the button
     */
     void SetDifficulty()
     {
